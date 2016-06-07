@@ -7,6 +7,7 @@
 function recordRate()
 {
     console.log("Beginning of function!")
+    console.log("ayyyyyyyyyyy")
     $.ajax({
 
 	//Form Key:
