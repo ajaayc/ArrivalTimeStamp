@@ -9,7 +9,7 @@ app.config.update(
 
 @app.route("/")
 def index():
-    return "Hello World"
+    return render_template("button.html")
 
 
 if __name__ == "__main__":
