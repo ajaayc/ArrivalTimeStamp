@@ -2,14 +2,54 @@
 
 <html>
   <header>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arrival Timestamp</title>
+
     <link rel="stylesheet" href="button.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="button.js"> </script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
   </header>
 
   <body>
-    <a href="#" onclick="recordRate()" class="myButton">SUBMIT</a>
 
+
+    <div class="jumbotron">
+      <div class="container">
+	<h1>Let us know that you're here!</h1>
+	<br>
+	  <!-- The Old Button -->
+	  <!-- <p><a class="myButton" href="#" onclick="recordRate()" role="button">I'm Here!</a></p> -->
+
+	<div class="centered">
+	  <!-- <p><a class="btn btn-lg btn-danger" href="#" onclick="recordRate()" role="button">I'm Here!</a></p> -->
+	  <button id="stampbutton" class="btn btn-lg btn-danger" onclick="recordRate()" type="button">I'm Here!</button>
+	</div>
+	<br>
+	<p>The UMHS Comprehensive Cancer Center Management and the UofM Center for Healthcare Engineering and Patient Safety need your time of arrival to better understand how we can reduce your wait time in the blood draw clinic. Please press the button once when you arrive, and we will then record your time of arrival. Thank you for helping us help you!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 centered">
+	<img src="cclogo-edit.jpg">
+      </div>
+      <div class="col-md-6 centered">
+	<img src="cheps.png">
+      </div>
+    </div>
+
+
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Bootstrap Javascript-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="button.js"> </script>
   </body>
 
 </html>

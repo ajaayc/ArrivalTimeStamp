@@ -17,11 +17,16 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family: "Rockwell Extra Bold";
 	font-size:13px;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #854629;
+	width: 150%;
+	height: 150%;
+	font-size: 15px;
+	display: table-cell;
+	vertical-align: middle
 }
 .myButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
@@ -36,4 +41,14 @@
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+.centered
+{
+    text-align:center;
+}
+#stampbutton
+{
+    font-size: 75px;
+    width: 9em;
+    height: 3em;
 }

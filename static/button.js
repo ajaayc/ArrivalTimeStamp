@@ -1,13 +1,13 @@
 //Got instructions from https://wiki.base22.com/pages/viewpage.action?pageId=72942000
-//Form URL:
+//Public Form URL:
 //https://docs.google.com/forms/d/1IFjsbafZddKlqVogD9Rm49XIWP1mVWUGg7g0m8W0UkI/viewform
-//Sample URL:
+//Sample URL to send POST request:
 //https://docs.google.com/a/YOURDOMAIN.com/forms/d/15QFO2VE44-9gAwcJeTPPWvxAX7v_1Ye9qmjdX2VzLBw/formResponse
 //Replace YOURDOMAIN.com with umich.edu
 function recordRate()
 {
     console.log("Beginning of function!")
-    console.log("ayyyyyyyyyyy")
+    //console.log("ayyyyyyyyyyy")
     $.ajax({
 
 	//Form Key:
