@@ -46,9 +46,19 @@
 {
     text-align:center;
 }
+
+#appdescription
+{
+    font-size: 20pt;
+}
+
 #stampbutton
 {
-    font-size: 75px;
-    width: 9em;
+    font-size: 6vw;
+    width: 75%;
     height: 3em;
+/*
+    width: 10em;
+    height: 4em;
+*/
 }

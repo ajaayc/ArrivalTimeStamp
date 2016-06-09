@@ -6,6 +6,12 @@
 //Replace YOURDOMAIN.com with umich.edu
 function recordRate()
 {
+    sendRate()
+    informUser()
+}
+
+function sendRate()
+{
     console.log("Beginning of function!")
     //console.log("ayyyyyyyyyyy")
     $.ajax({
@@ -36,4 +42,23 @@ function recordRate()
         }
     });
     console.log("Reached end of function!")
+}
+
+
+function informUser()
+{
+    console.log("Informing the user!")
+    var button = document.getElementById("stampbutton") 
+    button.className = "btn btn-lg btn-success"
+    button.innerHTML = "Response <br> Recorded!"
+    button.disabled = true
+    
+    setTimeout(
+	function() {
+	    var button = document.getElementById("stampbutton");
+	    button.className = "btn btn-lg btn-danger"
+	    button.innerHTML = "I'm Here!"
+	    button.disabled = false
+	}
+	,1500)
 }
