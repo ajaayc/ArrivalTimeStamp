@@ -52,6 +52,9 @@ function informUser()
     button.className = "btn btn-lg btn-success"
     button.innerHTML = "Response <br> Recorded!"
     button.disabled = true
+
+    var header = document.getElementById("buttonheader") 
+    header.innerHTML = "Your response has been recorded."
     
     setTimeout(
 	function() {
@@ -59,6 +62,9 @@ function informUser()
 	    button.className = "btn btn-lg btn-danger"
 	    button.innerHTML = "I'm Here!"
 	    button.disabled = false
+
+	    var header = document.getElementById("buttonheader") 
+	    header.innerHTML = "Click the big red button!"
 	}
 	,1500)
 }
