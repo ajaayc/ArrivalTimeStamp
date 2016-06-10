@@ -50,11 +50,12 @@ function informUser()
     console.log("Informing the user!")
     var button = document.getElementById("stampbutton") 
     button.className = "btn btn-lg btn-success"
-    button.innerHTML = "Response <br> Recorded!"
+    button.innerHTML = "&#10004"
     button.disabled = true
-
+    //button.style.fontSize = "100pt"
+    
     var header = document.getElementById("buttonheader") 
-    header.innerHTML = "Your response has been recorded."
+    header.innerHTML = "Response Recorded!"
     
     setTimeout(
 	function() {
@@ -62,7 +63,8 @@ function informUser()
 	    button.className = "btn btn-lg btn-danger"
 	    button.innerHTML = "I'm Here!"
 	    button.disabled = false
-
+	    //button.style.fontSize = 6vw
+	    
 	    var header = document.getElementById("buttonheader") 
 	    header.innerHTML = "Click the big red button!"
 	}

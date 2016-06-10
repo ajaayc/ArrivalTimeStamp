@@ -5,14 +5,15 @@
 
 #appdescription
 {
-    font-size: 20pt;
+    /*font-size: 20pt;*/
+    font-size: 2vw;
 }
 
 #stampbutton
 {
     font-size: 6vw;
     width: 75%;
-    height: 3em;
+    height: 3.1em;
 /*
     width: 10em;
     height: 4em;
