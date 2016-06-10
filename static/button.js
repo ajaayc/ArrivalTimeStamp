@@ -55,7 +55,7 @@ function informUser()
     //button.style.fontSize = "100pt"
     
     var header = document.getElementById("buttonheader") 
-    header.innerHTML = "Response Recorded!"
+    header.innerHTML = "Response recorded!"
     
     setTimeout(
 	function() {
