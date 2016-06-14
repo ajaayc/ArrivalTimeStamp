@@ -66,7 +66,7 @@ function informUser()
 	    //button.style.fontSize = 6vw
 	    
 	    var header = document.getElementById("buttonheader") 
-	    header.innerHTML = "Click the big red button!"
+	    header.innerHTML = "Please click the button when you arrive."
 	}
 	,1500)
 }
