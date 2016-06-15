@@ -51,8 +51,11 @@ def download(gdoc_id, email, password, download_path=None, ):
     if download_path is None:
         download_path = os.path.abspath(os.path.dirname(__file__))
 
-    file_name = os.path.join(download_path, '%s.csv' % (gdoc_id))
-
+    import time
+    #file_name = os.path.join(download_path, '%s.csv' % (gdoc_id))
+    timestamp = time.strftime("%m.%d.%Y") + "_" + time.strftime("%H_%M_%S")
+    file_name = os.path.join(download_path, '%s%s.csv' % ("arrivalData_",timestamp))
+    
     print 'Downloading spreadsheet to %s...' % file_name
 
     docs_token = gd_client.GetClientLoginToken()
