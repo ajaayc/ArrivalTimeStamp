@@ -1,3 +1,18 @@
+window.onload = function()
+{
+    //Gets a unique id to identify the computer that is sending timestamps
+    console.log("Executing onload function")
+    if (localStorage.getItem("id") === null)
+    {
+	localStorage.setItem("id",Math.floor(Date.now() / 1000))
+    }
+    //Removing from localStorage
+    //localStorage.removeItem("id")
+
+    console.log("The id is " + localStorage.getItem("id"))
+}
+
+
 //Got instructions from https://wiki.base22.com/pages/viewpage.action?pageId=72942000
 //Public Form URL:
 //https://docs.google.com/forms/d/1IFjsbafZddKlqVogD9Rm49XIWP1mVWUGg7g0m8W0UkI/viewform
