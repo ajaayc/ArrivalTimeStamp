@@ -34,7 +34,7 @@ function sendRate()
 	//Form Key:
 	//1IFjsbafZddKlqVogD9Rm49XIWP1mVWUGg7g0m8W0UkI
 	url: "https://docs.google.com/a/umich.edu/forms/d/1IFjsbafZddKlqVogD9Rm49XIWP1mVWUGg7g0m8W0UkI/formResponse",
-        data: {},
+        data: {"entry.1954640113": localStorage.getItem("id")},
         type: "POST",
         dataType: "xml",
         statusCode: {
